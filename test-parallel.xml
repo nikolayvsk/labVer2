@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name = "Parallel Countering Test Suite" parallel="methods" thread-count="5">
+    <test name="Countering Tests">
+        <groups>
+            <run>
+                <include name="countering"/>
+                <include name="exceptions"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="Tests"></class>
+        </classes>
+    </test>
+</suite>
+
